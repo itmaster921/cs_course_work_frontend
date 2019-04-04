@@ -1,0 +1,63 @@
+.tree-item {
+  background-color: #fff;
+  position: relative;
+
+
+  &__label-wrapper {
+
+    > div {
+      padding: 15px;
+    }
+
+
+    background-size: 10px 10px;
+    background-repeat: no-repeat;
+    background-position: left center;
+
+    border-bottom: 0.5px solid #eee;
+
+    &--has-children {
+      cursor: pointer;
+    }
+  }
+
+  &__dots {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 15px;
+    height: 15px;
+    background-image: url("../../assets/dots.svg");
+    background-position: center center;
+    background-size: 15px;
+    background-repeat: no-repeat;
+  }
+
+  &__new {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 15px;
+    height: 15px;
+    background-image: url("../../assets/new.svg");
+    background-position: center center;
+    background-size: 15px;
+    background-repeat: no-repeat;
+  }
+  &__remove {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    width: 15px;
+    height: 15px;
+    background-size: 15px;
+    background: url("../../assets/minus.svg") no-repeat center center;
+  }
+  &--opened {
+    background-image: url("../../assets/next.svg");
+  }
+
+  &--closed {
+    background-image: url("../../assets/close.svg");
+  }
+}
