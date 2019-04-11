@@ -2,7 +2,5 @@
   "extends": [
     "codex"
   ],
-  "env": {
-    "browser": true
-  }
+ 
 }
