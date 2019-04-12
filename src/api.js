@@ -25,12 +25,12 @@ async function getData() {
   return response.data;
 }
 
-async function getAdminData(orgId) {
-  const config = {params: {login, password, orgId}};
-  const response = await axios.get(`${API_ENDPOINT}/get-data`, config);
+// async function getAdminData(orgId) {
+//   const config = {params: {login, password, orgId}};
+//   const response = await axios.get(`${API_ENDPOINT}/get-data`, config);
 
-  return response.data;
-}
+//   return response.data;
+// }
 
 async function saveData(orgData) {
   const config = {
